@@ -1,0 +1,8 @@
+.character {
+    border: 4px dashed whitesmoke;
+    width: 35%;
+    margin: 2% auto;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}

@@ -6,7 +6,7 @@ import Character from './Character'
 function CharacterList (props) {
 
     return(
-        <div>
+        <div className='character-list'>
             <h3>Character List</h3>
     
             {props.characters.map((character, index) => {

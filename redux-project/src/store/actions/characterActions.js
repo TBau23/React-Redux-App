@@ -12,7 +12,7 @@ export const FETCH_CHARS_ERROR = "FETCH_CHARS_ERROR"
 export const fetchChars = () => {
     return (dispatch) => {
         dispatch({type: FETCH_CHARS});
-        axios.get("https://rickandmortyapi.com/api/character/?page=4")
+        axios.get("https://rickandmortyapi.com/api/character/?page=7")
         .then(res => {
             console.log(res)
             dispatch({ type: FETCH_CHARS_SUCCESS, payload: res.data.results})

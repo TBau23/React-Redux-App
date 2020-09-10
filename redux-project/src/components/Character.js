@@ -1,10 +1,16 @@
 import React from 'react';
+import './Character.css'
 
-function Character(props) {
+function Character({character}) {
 
     return (
-        <div>
-            <h3>{props.character.name}</h3>
+        <div className='character'>
+            <img src={character.image} />
+            <h3>{character.name}</h3>
+            <p>Species: {character.species}</p>
+            {character.type !== '' ? <p>Type : {character.type}</p> : <p></p>}
+            <button>Save a Character</button>
+            
         </div>
     )
 
